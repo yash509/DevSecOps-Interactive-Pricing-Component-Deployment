@@ -241,7 +241,7 @@ pipeline {
           }
         }
 
-        stage ("Remove container") {
+        stage ("Remove Docker Container") {
             steps{
                 sh "docker stop ipcomponent | true"
                 sh "docker rm ipcomponent | true"
