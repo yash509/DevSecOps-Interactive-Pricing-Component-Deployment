@@ -251,7 +251,7 @@ pipeline {
         stage('Deploy to Docker Container'){
             steps{
                 //dir('BMI Calculator (JS)') {
-                    sh 'docker run -d --name ipcomponent -p 3000:3000 yash5090/ipcomponent:latest' 
+                    sh 'docker run -d --name ipcomponent -p 5000:5000 yash5090/ipcomponent:latest' 
                 //}
             }
         }
