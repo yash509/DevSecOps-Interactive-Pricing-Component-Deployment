@@ -240,6 +240,13 @@ pipeline {
            }
           }
         }
+
+        stage ("Remove container") {
+            steps{
+                sh "docker stop ipcomponent | true"
+                sh "docker rm ipcomponent | true"
+             }
+        }
         
         stage('Deploy to Docker Container'){
             steps{
