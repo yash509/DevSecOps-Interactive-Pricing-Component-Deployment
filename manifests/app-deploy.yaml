@@ -16,4 +16,4 @@ spec:
         - name: ipcomponent
           image: yash5090/ipcomponent:latest # Replace with the actual image tag
           ports:
-            - containerPort: 3000 # Replace with the port your Tetris game listens on
+            - containerPort: 5000 # Replace with the port your Tetris game listens on
